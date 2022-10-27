@@ -1,23 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import SimpleForm from './components/simpleForm/simpleForm';
+import { Button, CssVarsProvider, Sheet } from '@mui/joy';
+import Typography from '@mui/joy/Typography';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <CssVarsProvider>
+        <Sheet
+          sx={{
+            width: 300,
+            mx: 'auto', // margin left & right
+            my: 4, // margin top & botom
+            py: 3, // padding top & bottom
+            px: 2, // padding left & right
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 2,
+            borderRadius: 'sm',
+            boxShadow: 'md',
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <div>
+            <Typography level="h4" component="h1">
+              Welcome!
+            </Typography>
+            <Typography level="body2">Sign in to continue.</Typography>
+          </div>
+
+        </Sheet>
+      </CssVarsProvider>
     </div>
   );
 }
