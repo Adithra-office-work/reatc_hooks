@@ -1,7 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './LoginPart.module.css';
-import { render } from '@testing-library/react';
 import Typography from '@mui/joy/Typography';
 import { Button, CssVarsProvider, Sheet, Link, TextField } from '@mui/joy';
 import ModeToggle from '../ModeToggle/ModeToggle';

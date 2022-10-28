@@ -1,6 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './simpleForm.module.css';
 import { Avatar, Box, Card, Chip, Divider, IconButton, Stack, Switch, Typography } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { grey } from '@mui/material/colors';

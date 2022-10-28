@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import styles from './ModeToggle.module.css';
-import { Button } from '@mui/joy';
+import { Button, useColorScheme } from '@mui/joy';
 
 export default function ModeToggle() {
   const { mode, setMode } = useColorScheme();
